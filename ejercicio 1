@@ -1,0 +1,8 @@
+def separador (): 
+    print ("------------")
+
+def procesamiento_cadena (cadena):
+    """
+    esta funcion recibe una cadena de string y la formatea 
+    """
+reverso_cadena = cadena[::-1]
