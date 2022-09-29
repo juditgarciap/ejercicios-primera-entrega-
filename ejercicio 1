@@ -1,8 +1,19 @@
 def separador (): 
     print ("------------")
 
-def procesamiento_cadena (cadena):
+def procesamiento_cadena(cadena):
     """
     esta funcion recibe una cadena de string y la formatea 
     """
-reverso_cadena = cadena[::-1]
+
+    reverso_cadena = cadena[::-1]
+    split_cadena = reverso_cadena.split(',') 
+    nota = split_cadena[0]
+    nombre = split_cadena[1]
+
+    separador ()
+    print ('{} ha sacado un {} de nota'.format(nombre, nota))
+
+
+cadena = 'zeréP tiduJ,01'
+procesamiento_cadena(cadena) 

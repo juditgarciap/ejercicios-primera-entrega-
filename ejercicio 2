@@ -1,0 +1,32 @@
+def separador() :
+     print ("------------")
+
+def solicitar_introducir_numero(invitacion_texto):
+    """
+    Esta función verifica que tenemos número 
+    """
+
+    #Pedimos introducir número
+    print ( invitacion_texto, end = ':')
+    datoIntroducido = int(input())
+
+    return datoIntroducido 
+
+def instrucciones():
+    """
+    esta funcion hace los pasos del número mágico 
+    """
+    numero_magico = 123456789
+    numero_usuario = solicitar_introducir_numero(invitacion_texto = 'Ingresa un numero entre 1 y 9')
+    numero_usuario = numero_usuario * 9
+    numero_magico = numero_magico * numero_usuario
+    
+    separador()
+    print('Número mágico final : {}'.format(numero_magico))
+    separador()
+
+
+#llamar a la función 
+instrucciones()
+
+ 
