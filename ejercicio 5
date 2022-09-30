@@ -1,3 +1,13 @@
 #importar libreria sys 
 import sys 
+
 def descomponer_numero (numero):
+    pass
+argumentos = sys.argumentos
+
+if len(argumentos)> 1:
+    numero= int(argumentos [1])
+    descomponer_numero(numero)
+else:
+    print('Ingresa un número para poderlo descomponer')
+
