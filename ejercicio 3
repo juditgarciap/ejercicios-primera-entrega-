@@ -1,4 +1,5 @@
 from locale import LC_ALL
+from msvcrt import LK_LOCK
 
 
 def separador() :
@@ -25,4 +26,6 @@ print(resultado)
 separador()
 
 LC_ALL
+
+LK_LOCK
 
