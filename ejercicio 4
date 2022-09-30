@@ -2,4 +2,18 @@ def separador() :
      print ("------------")
 #usamos esta función para que se vea entre líneas 
 
-def tareas_ordenar (tareas):
+def tareas_ordenar (tareas, orden):
+    """
+    esta función 
+    colas= almacena datos (usamos las propiedades de las listas)
+    """
+    tareas = ['tarea A', 'tarea B', 'tarea C','Tarea D']
+    orden_prioridad= [5,3,2,1,4]
+#asignamos tarea a prioridad y vemos si la lista esta vacia 
+    cola_tareas = []
+    lista_emparejada = list(zip(tareas,orden))
+    for tarea, prioridad in lista_emparejada:
+        if not cola_tareas:
+
+print(lista_emparejada)
+
