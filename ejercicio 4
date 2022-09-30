@@ -12,7 +12,7 @@ def tareas_ordenar (tareas, orden):
 #asignamos tarea a prioridad y vemos si la lista esta vacia 
     cola_tareas = []
     lista_emparejada = list(zip(tareas,orden))
-    for tarea, prioridad in lista_emparejada:
+    for t, p in cola_tareas:
         if not cola_tareas:
             lista_emparejada.append ((tarea, prioridad))
             prioridad_anterior =prioridad
