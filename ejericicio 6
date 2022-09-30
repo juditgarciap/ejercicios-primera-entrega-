@@ -1,0 +1,15 @@
+def separador() :
+     print ("------------")
+def separar (lista): 
+    """
+    """
+    pares =[]
+    impares = []
+    for numero in lista:
+        if (numero % 2) == 0:
+            pares.append (numero)
+        else:
+            impares.append (numero)
+
+    return pares.sort() , impares.sort()
+
