@@ -14,6 +14,12 @@ def tareas_ordenar (tareas, orden):
     lista_emparejada = list(zip(tareas,orden))
     for tarea, prioridad in lista_emparejada:
         if not cola_tareas:
+            lista_emparejada.append ((tarea, prioridad))
+            prioridad_anterior =prioridad
+        else:
+        if prioridad < prioridad_anterior:
+                lista_emparejada.append((tarea, prioridad))
+
 
 print(lista_emparejada)
 
