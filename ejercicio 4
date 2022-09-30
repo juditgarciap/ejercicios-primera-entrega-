@@ -17,8 +17,11 @@ def tareas_ordenar (tareas, orden):
             lista_emparejada.append ((tarea, prioridad))
             prioridad_anterior =prioridad
         else:
-        if prioridad < prioridad_anterior:
+            if prioridad < prioridad_anterior:
                 lista_emparejada.append((tarea, prioridad))
+                prioridad_anterior =prioridad 
+
+    return cola_tareas 
 
 
 print(lista_emparejada)
