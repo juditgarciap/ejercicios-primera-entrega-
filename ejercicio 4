@@ -1,0 +1,5 @@
+def separador() :
+     print ("------------")
+#usamos esta función para que se vea entre líneas 
+
+def tareas_ordenar (tareas):
