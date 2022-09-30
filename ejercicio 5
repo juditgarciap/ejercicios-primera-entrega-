@@ -1,7 +1,19 @@
 #importar libreria sys 
-import sys 
+import sys
+from unittest.case import doModuleCleanups 
 
 def descomponer_numero (numero):
+#calcular las unidades del numero (de esto no estoy segura)
+    miles = numero // 1000
+    centenas = (numero % 10000) // 1000
+    decenas = (numero % 100) // 10
+    unidades = (numero % 10)
+
+    print ('000' + str(unidades))
+    print ('00' + str(centenas) + '0')
+    print ('0' + str(decenas)+ '00')
+    print (str(miles)+ '000')
+
     pass
 argumentos = sys.argumentos
 
