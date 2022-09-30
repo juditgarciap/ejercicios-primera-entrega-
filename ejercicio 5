@@ -1,2 +1,3 @@
-def separador() :
-     print ("------------")
+#importar libreria sys 
+import sys 
+def descomponer_numero (numero):
