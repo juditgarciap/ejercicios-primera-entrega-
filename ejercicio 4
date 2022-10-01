@@ -2,7 +2,7 @@ def separador() :
      print ("------------")
 #usamos esta función para que se vea entre líneas 
 
-def tareas_ordenar (tareas, orden):
+def tareas_ordenar(tareas, orden):
     """
     esta función  ordena por prioridad unos elementos en una lista
     """
@@ -10,12 +10,19 @@ def tareas_ordenar (tareas, orden):
         return pareja[1]
     
     lista_emparejada = list(zip(tareas,orden))
-    #con la pista de sort encontré sorted, sirve para ordenar y key sirve para ordenar por prioridad
-    lista_emparejada = sorted(lista_emparejada, key=porPrioridad)
-
-    print (lista_emparejada)
+#con la pista de sort encontré sorted, sirve para ordenar y key sirve para ordenar por prioridad
+    lista_emparejada = sorted(lista_emparejada, key=porPrioridad, ordenarlos = True)
+#recorrer lista y crear lista 
+    nombre_tareas= []
+    for pareja in lista_emparejada:
+        nombre_tarea = pareja[0]
+        nombre_tareas.append (nombre_tarea)
+    print (nombre_tarea)
 
 tareas = ['tarea A', 'tarea B', 'tarea C','Tarea D']
 orden_prioridad= [2,1,4,3]
+
+separador()
 tareas_ordenar(tareas, orden)
+separador()
 
