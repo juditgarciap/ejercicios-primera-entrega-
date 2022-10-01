@@ -10,6 +10,11 @@ def separar (lista):
             pares.append (numero)
         else:
             impares.append (numero)
+    pares.sort()
+    impares.sort()
+    return pares, impares
+lista = [6,5,2,1,7]
+pares, impares =separar(lista)
 
-    return pares.sort() , impares.sort()
-
+print(pares)
+print(impares)
