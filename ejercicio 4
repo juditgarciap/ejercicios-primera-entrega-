@@ -26,3 +26,4 @@ separador()
 tareas_ordenar(tareas, orden)
 separador()
 
+#no se ejecuta pero no se que hacer más 
