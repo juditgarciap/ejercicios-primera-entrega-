@@ -4,25 +4,18 @@ def separador() :
 
 def tareas_ordenar (tareas, orden):
     """
-    esta función 
-    colas= almacena datos (usamos las propiedades de las listas)
+    esta función  ordena por prioridad unos elementos en una lista
     """
-    tareas = ['tarea A', 'tarea B', 'tarea C','Tarea D']
-    orden_prioridad= [5,3,2,1,4]
-#asignamos tarea a prioridad y vemos si la lista esta vacia 
-    cola_tareas = []
+    def porPrioridad (pareja): 
+        return pareja[1]
+    
     lista_emparejada = list(zip(tareas,orden))
-    for t, p in cola_tareas:
-        if not cola_tareas:
-            lista_emparejada.append ((tarea, prioridad))
-            prioridad_anterior =prioridad
-        else:
-            if prioridad < prioridad_anterior:
-                lista_emparejada.append((tarea, prioridad))
-                prioridad_anterior =prioridad 
+    #con la pista de sort encontré sorted, sirve para ordenar y key sirve para ordenar por prioridad
+    lista_emparejada = sorted(lista_emparejada, key=porPrioridad)
 
-    return cola_tareas 
+    print (lista_emparejada)
 
-
-print(lista_emparejada)
+tareas = ['tarea A', 'tarea B', 'tarea C','Tarea D']
+orden_prioridad= [2,1,4,3]
+tareas_ordenar(tareas, orden)
 

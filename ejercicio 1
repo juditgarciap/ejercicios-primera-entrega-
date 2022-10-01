@@ -15,5 +15,5 @@ def procesamiento_cadena(cadena):
     print ('{} ha sacado un {} de nota'.format(nombre, nota))
 
 
-cadena = 'zeréP tiduJ,01'
+cadena = 'aicraG tiduJ,8'
 procesamiento_cadena(cadena) 
