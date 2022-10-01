@@ -1,5 +1,5 @@
 def separador (): 
-    print ("------------")
+    print ("-------------------")
 
 def procesamiento_cadena(cadena):
     """

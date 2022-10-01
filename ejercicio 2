@@ -1,5 +1,5 @@
 def separador() :
-     print ("------------")
+     print ("-----------------")
 
 def solicitar_introducir_numero(invitacion_texto):
     """

@@ -1,7 +1,8 @@
 def separador() :
-     print ("------------")
+     print ("------------------")
 def separar (lista): 
     """
+    Esta Función muestra los números pares e impares 
     """
     pares =[]
     impares = []

@@ -1,5 +1,5 @@
 def separador() :
-     print ("------------")
+     print ("----------------")
 def agregar_lista  (lista, elemento):
     """
     Esta función permite que el programa siga funcionando si hay un error y lo añada a la lista 
